@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@1,600&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poltawski+Nowy:ital,wght@1,600&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&family=Dancing+Script:wght@600&family=Poltawski+Nowy:ital,wght@1,600&family=Sigmar&display=swap');
+
+
+
+
+:root {
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: rgb(17,27,19);
+    background: linear-gradient(90deg, rgba(17,27,19,1) 0%, rgba(33,54,37,1) 38%, rgba(47,80,54,1) 100%);
+    font-family: 'Poltawski Nowy', serif;
+}
+
+#header {
+    background-color: rgb(6, 12, 7);
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    z-index: 100;
+    display: inline;
+}
+
+
+.navbar{
+    position: fixed;
+    display: block;
+    position: absolute;
+    TOP: 7px;
+    right: 20px;
+    width: 30rem;
+}
+
+
+.logo1 {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    display: block;
+}
+.logo1 a {
+    font-size: 25px ;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.navbar a {
+    font-size: 22px;
+    text-decoration: none;
+    background: linear-gradient(120deg, #04e8f8 , rgba(5, 255, 151, 0.938));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbar ul{
+    text-decoration: none;
+    width: 30rem;
+    list-style: none;
+}
+
+
+.navbar li {
+    display: inline-block;
+    padding-left: 25px;
+    list-style: none;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+#footer {
+    background-color: rgb(6, 12, 7);
+    padding: 15px;
+    width: 100vw;
+    height: 60px;
+}
+
+#footer li {
+    list-style: none;
+    display: inline-block;
+}
+
+#footer ul {
+    position: absolute;
+    left: 54rem;
+    
+}
+
+#footer a {
+    font-size: 30px;
+    padding-left: 18px;
+    background: linear-gradient(120deg, #04e8f8 , rgba(5, 255, 151, 0.938));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+/*------------  index separado -------------- */
+
+
+.sect {
+    display: block;
+    position: absolute;
+    top: 18rem;
+    left: 10rem;
+    width: 450px;
+}
+
+.tGrande {
+    font-size: 65px;
+}
+.sect  h3 {
+    font-family: 'Crimson Text', serif;
+}
+
+
+.foto {
+    display: block;
+    position: absolute;
+    right: 10rem;
+    width: 450px; ;
+    height: 600px;
+    top: 10rem;
+    border:solid 1px #389644;
+    border-radius: 18px 0px 18px 0;
+}
+
+
+/*--------------------- ABOUT ------------------*/
+
+
+.sectAbout {
+    display: block;
+    position: absolute;
+    top: 18rem;
+    left: 10rem;
+    width: 450px;
+}
+
+
