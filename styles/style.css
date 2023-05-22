@@ -286,3 +286,25 @@ textarea{
 
 }
 
+@media screen and (max-width:470px ){
+	.sect {
+		width: 17rem;
+	
+	}
+	.tGrande {
+		font-size: 35px;
+	}
+	.sect h3 {
+		font-size: 15px;
+	}
+	.main_foto{
+		width: 250px; ;
+		height: 400px;
+	}
+	.foto {
+		width: 250px; ;
+		height: 400px;
+	}
+}
+
+
