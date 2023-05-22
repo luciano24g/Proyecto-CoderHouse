@@ -54,8 +54,11 @@ body{
 
 #footer {
     background-color: rgb(6, 12, 7);
-    height: 3.5rem;
+    height: 4rem;
 	grid-area: footer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #footer li {
@@ -63,11 +66,9 @@ body{
     align-items: center;
 }
 
-#footer ul {
+.cont_list{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
 }
 
 #footer a {
@@ -98,6 +99,8 @@ body{
     height: 600px;
     border:solid 1px #2c6834;
     border-radius: 18px 0px 18px 0;
+	margin-top: 3rem;
+	margin-bottom: 6rem;
 }
 
 
@@ -285,10 +288,28 @@ textarea{
 	}
 
 }
+@media screen and (max-width:930px ){
+	.sect {
+		width: 21rem;
+	}
+	.tGrande {
+		font-size: 35px;
+	}
+	.main_foto{
+		width: 300px;
+		height: 450px;
+	}
+	.foto {
+		width: 300px;
+		height: 450px;
+	}
+
+
+}
 
 @media screen and (max-width:470px ){
 	.sect {
-		width: 17rem;
+		width: 16rem;
 	}
 	.tGrande {
 		font-size: 35px;
@@ -301,7 +322,7 @@ textarea{
 		height: 400px;
 	}
 	.foto {
-		width: 250px; ;
+		width: 250px;
 		height: 400px;
 	}
 }
