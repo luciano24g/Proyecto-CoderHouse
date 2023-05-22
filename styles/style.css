@@ -47,6 +47,8 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	grid-area: main;
+	padding-top: 5rem ;
+	padding-bottom: 5rem;
 }
 
 
