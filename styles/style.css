@@ -64,6 +64,7 @@ body{
 #footer li {
     list-style: none;
     align-items: center;
+	padding-right: 1rem;
 }
 
 .cont_list{
@@ -131,8 +132,33 @@ body{
     background-color: #27ae60;
 }
 
+/* --------------------------SKILLS---------------------- */
+.sect_skills{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+}
+.cardSK {
+    display: flex;
+	justify-content:space-around ;
+}
 
+.card {
+    height: 28rem;
+    width: 17rem;
+    display: flex;
+    padding: 2rem;
+	box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);
+	-webkit-box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);
+	-moz-box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);
+	transition: .3s;
+}
 
+.bxCard {
+    font-size: 55px;
+}
 
 
 
@@ -174,7 +200,9 @@ body{
 	align-items: center;
 	text-align: center;
 	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+	box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);
+	-webkit-box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);
+	-moz-box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);;
 }
 
 .left{
