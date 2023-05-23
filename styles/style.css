@@ -18,6 +18,7 @@
 
 
 body{
+	display: grid;
 	grid-template-areas:
     "header header header"
     "main main main"
@@ -49,6 +50,7 @@ body{
 	grid-area: main;
 	padding-top: 5rem ;
 	padding-bottom: 5rem;
+	z-index: -5;
 }
 
 
@@ -59,6 +61,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 99;
 }
 
 #footer li {
@@ -136,13 +139,14 @@ body{
 .sect_skills{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-	justify-content: center;
 }
 .cardSK {
-    display: flex;
-	justify-content:space-around ;
+	
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(auto-fit, 300px);
+	justify-content: center;
+	align-items: center;
 }
 
 .card {
@@ -154,6 +158,7 @@ body{
 	-webkit-box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);
 	-moz-box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);
 	transition: .3s;
+	
 }
 
 .bxCard {
@@ -190,7 +195,7 @@ body{
 	background: url("img/bg.jpg") no-repeat center;
 	background-size: cover;
 	filter: blur(50px);
-	z-index: -1;
+	z-index: -50;
 }
 .contact-box{
 	max-width: 850px;
@@ -301,22 +306,21 @@ textarea{
 		width: 350px; ;
 		height: 500px;
 	}
+	/* ------------------------------ ABOUT --------------------------- */
+
+
 
 
 
 }
 
+
 @media screen and (max-width:930px ){
+	/* ---------------------------- iNDEX ---------------------- */
 	#main{
 		flex-direction: column;
 	}
 
-	.sect {
-		width: 22rem;
-	}
-
-}
-@media screen and (max-width:930px ){
 	.sect {
 		width: 21rem;
 	}
@@ -331,11 +335,24 @@ textarea{
 		width: 300px;
 		height: 450px;
 	}
+/* --------------------- CONTACTO ----------------------- */
+	.contact-box{
+		grid-template-columns: 1fr;
+}
+.left{
+	height: 200px;
+}
 
+/* ------------------------- SKILLS ---------------------------------- */
+	.cardSK{
+		flex-direction: column;
+		align-items: center;
+	}
 
 }
 
 @media screen and (max-width:470px ){
+	/* ---------------------------- iNDEX ---------------------- */
 	.sect {
 		width: 16rem;
 	}
