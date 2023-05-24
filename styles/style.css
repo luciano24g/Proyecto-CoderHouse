@@ -110,12 +110,12 @@ body{
 
 
 .sectAbout {
-    display: block;
-    position: absolute;
-    top: 18rem;
-    left: 10rem;
-    width: 450px;
+    display: flex;
+    width: 100vh;
+	align-items: center;
+	justify-content: space-around;
 }
+
 
 .btn-1{
 	width: 50%;
@@ -130,7 +130,20 @@ body{
 }
 
 .btn-1:hover{
-    background-color: #27ae60;
+    background-color: #21c063;
+}
+
+.foto2{
+	width: 311px; 
+    height: 240px;
+}
+.card_about{
+	width: 450px; ;
+    height: 310px;
+}
+
+.botones{
+	display: flex;
 }
 
 /* --------------------------SKILLS---------------------- */
@@ -175,6 +188,13 @@ body{
 
 
 /* ------------------------ CONTACT ------------------------- */
+
+.sect_contact{
+	display: flex;
+	width: 100vw;
+	align-items: center;
+	justify-content: center;
+}
 
 .container{
 	position: relative;
@@ -370,9 +390,22 @@ textarea{
 
 
 
-	
+/* ------------------------- SKILLS ---------------------------------- */
+	.card {
+		height: 24rem;
+    	width: 13rem;
+	}
 	.sect_skills{
 		padding: 0rem;
+		margin-top: 14rem;
+	}
+
+	.cardSK{
+		justify-items: center;
+	}
+
+	.cardSK p{
+		font-size: 13px;
 	}
 }
 
