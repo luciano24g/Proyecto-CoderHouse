@@ -382,7 +382,7 @@ textarea{
 @media screen and (max-width:680px) {
 	/* -------------------- index ------------------- */
 	#main {
-		height: 230vh;
+		height: 200vh;
 		
 	}
 
@@ -397,7 +397,7 @@ textarea{
 	}
 	.sect_skills{
 		padding: 0rem;
-		margin-top: 14rem;
+		margin-top: 6rem;
 	}
 
 	.cardSK{
