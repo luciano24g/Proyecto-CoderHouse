@@ -203,7 +203,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20px 100px;
+	padding: 20px 50px;
 }
 
 .container:after{
@@ -334,9 +334,7 @@ textarea{
 	/* ------------------------------ ABOUT --------------------------- */
 
 	/* ------------------------- SKILLS ---------------------------------- */
-	.sect_skills{
-		
-	}
+	
 }
 
 
@@ -382,7 +380,7 @@ textarea{
 @media screen and (max-width:680px) {
 	/* -------------------- index ------------------- */
 	#main {
-		height: 200vh;
+		height: 220vh;
 		
 	}
 
@@ -397,7 +395,7 @@ textarea{
 	}
 	.sect_skills{
 		padding: 0rem;
-		margin-top: 6rem;
+		margin-top: 2rem;
 	}
 
 	.cardSK{
