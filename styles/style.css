@@ -22,6 +22,9 @@ body{
 	grid-template-areas:
     "header header header"
     "main main main"
+	"main main main"
+	"main main main"
+	"main main main"
     "footer footer footer"
     ;
     grid-template-rows: auto auto auto ;
@@ -32,7 +35,7 @@ body{
 
 .listCent {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 #header{
@@ -45,11 +48,6 @@ body{
 	color: aliceblue;
 	background: rgb(17,27,19);
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	grid-area: main;
-	padding-top: 5rem ;
-	padding-bottom: 5rem;
 	z-index: -5;
 }
 
@@ -61,7 +59,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 99;
+	
 }
 
 #footer li {
@@ -86,8 +84,10 @@ body{
 
 
 .sect {
-    display: block;
-    width: 29rem;
+    display: flex;
+	width: 100vw;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .tGrande {
@@ -103,8 +103,6 @@ body{
     height: 600px;
     border:solid 1px #2c6834;
     border-radius: 18px 0px 18px 0;
-	margin-top: 3rem;
-	margin-bottom: 6rem;
 }
 
 
@@ -139,9 +137,12 @@ body{
 .sect_skills{
     width: 100vw;
     height: 100vh;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	
 }
 .cardSK {
-	
 	display: grid;
 	grid-gap: 16px;
 	grid-template-columns: repeat(auto-fit, 300px);
@@ -290,8 +291,12 @@ textarea{
 
 /* ------------------------- MEDIA QUERY----------------------- */
 
-@media screen and (max-width:1300px ){
+@media screen and (max-width:1312px ){
 	/* ---------------------------- iNDEX ---------------------- */
+	#main {
+		height: 120vh;
+	}
+
 	.tGrande {
 		font-size: 50px;
 	}
@@ -308,21 +313,23 @@ textarea{
 	}
 	/* ------------------------------ ABOUT --------------------------- */
 
-
-
-
-
+	/* ------------------------- SKILLS ---------------------------------- */
+	.sect_skills{
+		
+	}
 }
+
 
 
 @media screen and (max-width:930px ){
 	/* ---------------------------- iNDEX ---------------------- */
 	#main{
-		flex-direction: column;
+		height: 120vh;
 	}
 
 	.sect {
-		width: 21rem;
+		
+		flex-direction: column;
 	}
 	.tGrande {
 		font-size: 35px;
@@ -338,23 +345,49 @@ textarea{
 /* --------------------- CONTACTO ----------------------- */
 	.contact-box{
 		grid-template-columns: 1fr;
-}
-.left{
-	height: 200px;
-}
+	}
+	.left{
+		height: 200px;
+	}
 
 /* ------------------------- SKILLS ---------------------------------- */
 	.cardSK{
 		flex-direction: column;
-		align-items: center;
+		
 	}
 
 }
 
+
+@media screen and (max-width:680px) {
+	/* -------------------- index ------------------- */
+	#main {
+		height: 230vh;
+		
+	}
+
+
+
+
+
+	
+	.sect_skills{
+		padding: 0rem;
+	}
+}
+
+
+
+
+
 @media screen and (max-width:470px ){
 	/* ---------------------------- iNDEX ---------------------- */
+
+	#main {
+		height: 230vh;
+	}
 	.sect {
-		width: 16rem;
+		justify-content: space-around;
 	}
 	.tGrande {
 		font-size: 35px;
@@ -370,6 +403,15 @@ textarea{
 		width: 250px;
 		height: 400px;
 	}
+
+
+	/* ------------------------- SKILLS ---------------------------------- */
+
+
+	
 }
+
+
+
 
 
