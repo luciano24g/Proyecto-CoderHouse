@@ -51,6 +51,16 @@ body{
 	z-index: -5;
 }
 
+.bg_navbar{
+	background: rgb(8,15,10);
+	background: linear-gradient(90deg, rgba(8,15,10,1) 0%, rgba(5,12,7,1) 50%, rgba(8,15,10,1) 100%);
+}
+.bg_navbar a{
+	color: #fff;
+}
+
+
+
 
 #footer {
     background-color: rgb(6, 12, 7);
@@ -111,11 +121,19 @@ body{
 
 .sectAbout {
     display: flex;
-    width: 100vh;
+    width: 100vw;
+	height:100vh ;
 	align-items: center;
 	justify-content: space-around;
 }
 
+.sect_art{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 800px;
+	height: 400px;
+}
 
 .btn-1{
 	width: 50%;
@@ -129,13 +147,13 @@ body{
 	transition: .3s;
 }
 
-.btn-1:hover{
+.btn-1:hover {
     background-color: #21c063;
 }
 
 .foto2{
-	width: 311px; 
-    height: 240px;
+	width: 450px; 
+    height: 250px;
 }
 .card_about{
 	width: 450px; ;
@@ -146,7 +164,9 @@ body{
 	display: flex;
 }
 
+
 /* --------------------------SKILLS---------------------- */
+
 .sect_skills{
     width: 100vw;
     height: 100vh;
@@ -178,13 +198,6 @@ body{
 .bxCard {
     font-size: 55px;
 }
-
-
-
-
-
-
-
 
 
 /* ------------------------ CONTACT ------------------------- */
@@ -291,7 +304,7 @@ textarea{
 	transition: .3s;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #21c063;
 }
 
@@ -299,13 +312,6 @@ textarea{
     border: 2px solid rgba(30,85,250,0.47);
     background-color: #fff;
 }
-
-
-
-
-
-
-
 
 
 
@@ -332,6 +338,10 @@ textarea{
 		height: 500px;
 	}
 	/* ------------------------------ ABOUT --------------------------- */
+	.sect_art{
+		width:400px;
+	}
+
 
 	/* ------------------------- SKILLS ---------------------------------- */
 	
@@ -360,7 +370,16 @@ textarea{
 		width: 300px;
 		height: 450px;
 	}
-/* --------------------- CONTACTO ----------------------- */
+	/* ------------------------------ ABOUT --------------------------- */
+	.sectAbout{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+
+
+
+	/* --------------------- CONTACTO ----------------------- */
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
@@ -415,7 +434,7 @@ textarea{
 	/* ---------------------------- iNDEX ---------------------- */
 
 	#main {
-		height: 230vh;
+		height: 250vh;
 	}
 	.sect {
 		justify-content: space-around;
