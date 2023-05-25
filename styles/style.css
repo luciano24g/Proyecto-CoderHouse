@@ -46,9 +46,6 @@ body{
 	font-size: 18px;
 }
 
-colordis:active{
-	color: #21c063;
- }
 
 #main {
     height: 100vh;
@@ -96,6 +93,7 @@ colordis:active{
 	height: 100vh;
 	align-items: center;
 	justify-content: space-evenly;
+	color: #fff;
 }
 
 .present_text {
